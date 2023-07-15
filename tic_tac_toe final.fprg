@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KRISHNA NERELLA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-04 02:13:23 PM"/>
+        <attribute name="created" value="a2lyYW47REVTS1RPUC04U1FONVI4OzIwMjItMDEtMTM7MTA6MDI6NDUgUE07Mjg3Mg=="/>
+        <attribute name="edited" value="a2lyYW47REVTS1RPUC04U1FONVI4OzIwMjItMDEtMTQ7MDc6NTc6NTggUE07NDszMDA0"/>
+        <attribute name="edited" value="dmFzYW47REVTS1RPUC1VUUZNQjRROzIwMjItMDEtMTQ7MDg6MTE6NDAgUE07NjszMDE1"/>
+        <attribute name="edited" value="S3Jpc2huYTtMQVBUT1AtOUFSR0NCVTU7MjAyMi0wMi0wNDswMjoxMzoyMyBQTTsxNTszMjAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="String" array="False" size=""/>
+            <declare name="p1, win1, win2, flag, p2" type="Integer" array="False" size=""/>
+            <declare name="arr" type="String" array="True" size="9"/>
+            <assign variable="arr[0]" expression="&quot;1&quot;"/>
+            <assign variable="arr[1]" expression="&quot;2&quot;"/>
+            <assign variable="arr[2]" expression="&quot;3&quot;"/>
+            <assign variable="arr[3]" expression="&quot;4&quot;"/>
+            <assign variable="arr[4]" expression="&quot;5&quot;"/>
+            <assign variable="arr[5]" expression="&quot;6&quot;"/>
+            <assign variable="arr[6]" expression="&quot;7&quot;"/>
+            <assign variable="arr[7]" expression="&quot;8&quot;"/>
+            <assign variable="arr[8]" expression="&quot;9&quot;"/>
+            <assign variable="x" expression="&quot;rematch&quot;"/>
+            <assign variable="y" expression="&quot;  &quot;"/>
+            <assign variable="win1" expression="0"/>
+            <assign variable="win2" expression="0"/>
+            <assign variable="flag" expression="0"/>
+            <while expression="x == &quot;rematch&quot;">
+                <assign variable="arr[0]" expression="&quot;1&quot;"/>
+                <assign variable="arr[1]" expression="&quot;2&quot;"/>
+                <assign variable="arr[2]" expression="&quot;3&quot;"/>
+                <assign variable="arr[3]" expression="&quot;4&quot;"/>
+                <assign variable="arr[4]" expression="&quot;5&quot;"/>
+                <assign variable="arr[5]" expression="&quot;6&quot;"/>
+                <assign variable="arr[6]" expression="&quot;7&quot;"/>
+                <assign variable="arr[7]" expression="&quot;8&quot;"/>
+                <assign variable="arr[8]" expression="&quot;9&quot;"/>
+                <output expression="arr[0]&amp;y&amp;arr[1]&amp;y&amp;arr[2]&amp;y&amp;&quot;&#13;&#10;&quot;&amp;arr[3]&amp;y&amp;arr[4]&amp;y&amp;arr[5]&amp;y&amp;&quot;&#13;&#10;&quot;&amp;arr[6]&amp;y&amp;arr[7]&amp;y&amp;arr[8]" newline="True"/>
+                <while expression="!((arr[0] == &quot;x&quot; || arr[0] ==&quot;o&quot;)&amp;&amp;(arr[1] == &quot;x&quot;||arr[1] ==&quot;o&quot;)&amp;&amp;(arr[2] == &quot;x&quot;||arr[2] ==&quot;o&quot;)&amp;&amp;(arr[3] == &quot;x&quot;||arr[3] ==&quot;o&quot;)&amp;&amp;(arr[4] == &quot;x&quot;||arr[4] ==&quot;o&quot;)&amp;&amp;(arr[5] == &quot;x&quot;||arr[5] ==&quot;o&quot;)&amp;&amp;(arr[6] == &quot;x&quot;||arr[6] ==&quot;o&quot;)&amp;&amp;(arr[7] == &quot;x&quot;||arr[7] ==&quot;o&quot;) &amp;&amp; (arr[8] == &quot;x&quot;||arr[8] ==&quot;o&quot;))&amp;&amp; flag != 1">
+                    <input variable="p1"/>
+                    <assign variable="arr[p1-1]" expression="&quot;x&quot;"/>
+                    <output expression="arr[0]&amp;y&amp;arr[1]&amp;y&amp;arr[2]&amp;y&amp;&quot;&#13;&#10;&quot;&amp;arr[3]&amp;y&amp;arr[4]&amp;y&amp;arr[5]&amp;y&amp;&quot;&#13;&#10;&quot;&amp;arr[6]&amp;y&amp;arr[7]&amp;y&amp;arr[8]" newline="True"/>
+                    <if expression="(arr[0] == arr[1]&amp;&amp; arr[1] == arr[2]&amp;&amp;arr[2] == arr[0]&amp;&amp; arr[0] == &quot;x&quot; || arr[3] == arr[4]&amp;&amp; arr[4] == arr[5]&amp;&amp;arr[3] == arr[5]&amp;&amp; arr[3] == &quot;x&quot; || arr[6] == arr[7]&amp;&amp; arr[7] == arr[8]&amp;&amp;arr[8] == arr[6]&amp;&amp; arr[6] == &quot;x&quot;) || (arr[0] == arr[3]&amp;&amp; arr[3] == arr[6]&amp;&amp;arr[3] == arr[6]&amp;&amp; arr[0] == &quot;x&quot; || arr[1] == arr[4]&amp;&amp; arr[4] == arr[7]&amp;&amp;arr[4] == arr[7]&amp;&amp; arr[1] == &quot;x&quot; || arr[2] == arr[5]&amp;&amp; arr[5] == arr[8]&amp;&amp;arr[8] == arr[2]&amp;&amp; arr[2] == &quot;x&quot;)|| (arr[0] == arr[4]&amp;&amp; arr[4] == arr[8]&amp;&amp;arr[8] == arr[0]&amp;&amp; arr[0] == &quot;x&quot;) || (arr[2] == arr[4]&amp;&amp; arr[4] == arr[6]&amp;&amp;arr[6] == arr[2]&amp;&amp; arr[2] == &quot;x&quot;)">
+                        <then>
+                            <output expression="&quot;player1 won &quot;" newline="True"/>
+                            <assign variable="win1" expression="win1+1"/>
+                            <assign variable="flag" expression="1"/>
+                        </then>
+                        <else>
+                            <if expression="!((arr[0] == &quot;x&quot; || arr[0] ==&quot;o&quot;)&amp;&amp;(arr[1] == &quot;x&quot;||arr[1] ==&quot;o&quot;)&amp;&amp;(arr[2] == &quot;x&quot;||arr[2] ==&quot;o&quot;)&amp;&amp;(arr[3] == &quot;x&quot;||arr[3] ==&quot;o&quot;)&amp;&amp;(arr[4] == &quot;x&quot;||arr[4] ==&quot;o&quot;)&amp;&amp;(arr[5] == &quot;x&quot;||arr[5] ==&quot;o&quot;)&amp;&amp;(arr[6] == &quot;x&quot;||arr[6] ==&quot;o&quot;)&amp;&amp;(arr[7] == &quot;x&quot;||arr[7] ==&quot;o&quot;) &amp;&amp; (arr[8] == &quot;x&quot;||arr[8] ==&quot;o&quot;))">
+                                <then>
+                                    <input variable="p2"/>
+                                    <assign variable="arr[p2-1]" expression="&quot;o&quot;"/>
+                                    <output expression="arr[0]&amp;y&amp;arr[1]&amp;y&amp;arr[2]&amp;y&amp;&quot;&#13;&#10;&quot;&amp;arr[3]&amp;y&amp;arr[4]&amp;y&amp;arr[5]&amp;y&amp;&quot;&#13;&#10;&quot;&amp;arr[6]&amp;y&amp;arr[7]&amp;y&amp;arr[8]" newline="True"/>
+                                    <if expression="(arr[0] == arr[1]&amp;&amp; arr[1] == arr[2]&amp;&amp;arr[2] == arr[0]&amp;&amp; arr[0] == &quot;o&quot; || arr[3] == arr[4]&amp;&amp; arr[4] == arr[5]&amp;&amp;arr[3] == arr[5]&amp;&amp; arr[3] == &quot;o&quot; || arr[6] == arr[7]&amp;&amp; arr[7] == arr[8]&amp;&amp;arr[8] == arr[6]&amp;&amp; arr[6] == &quot;o&quot;) || (arr[0] == arr[3]&amp;&amp; arr[3] == arr[6]&amp;&amp;arr[3] == arr[6]&amp;&amp; arr[0] == &quot;o&quot; || arr[1] == arr[4]&amp;&amp; arr[4] == arr[7]&amp;&amp;arr[4] == arr[7]&amp;&amp; arr[1] == &quot;o&quot; || arr[2] == arr[5]&amp;&amp; arr[5] == arr[8]&amp;&amp;arr[8] == arr[2]&amp;&amp; arr[2] == &quot;o&quot;)|| (arr[0] == arr[4]&amp;&amp; arr[4] == arr[8]&amp;&amp;arr[8] == arr[0]&amp;&amp; arr[0] == &quot;o&quot;) || (arr[2] == arr[4]&amp;&amp; arr[4] == arr[6]&amp;&amp;arr[6] == arr[2]&amp;&amp; arr[2] == &quot;o&quot;)">
+                                        <then>
+                                            <output expression="&quot;player2 wins&quot;" newline="True"/>
+                                            <assign variable="win2" expression="win2+1"/>
+                                            <assign variable="flag" expression="1"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </while>
+                <assign variable="flag" expression="0"/>
+                <input variable="x"/>
+            </while>
+            <output expression="&quot;Player1 wins = &quot; &amp; win1&amp;&quot;&#13;&#10;&quot;&amp; &quot;player2 wins = &quot; &amp; win2" newline="True"/>
+        </body>
+    </function>
+    <function name="output" type="None" variable="">
+        <parameters>
+            <parameter name="arr" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="y" type="String" array="False" size=""/>
+            <assign variable="y" expression="&quot;  &quot;"/>
+        </body>
+    </function>
+</flowgorithm>
