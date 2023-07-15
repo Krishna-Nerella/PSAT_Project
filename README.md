@@ -13,7 +13,7 @@ git clone https://github.com/Krishna-Nerella/tic-tac-toe-flowgorithm.git
 
 2. Open the Flowgorithm tool on your machine.
 
-3. Load the `tic_tac_toe.fprg` file from the cloned repository using the Flowgorithm tool.
+3. Load the `tic_tac_toe final.fprg` file from the cloned repository using the Flowgorithm tool.
 
 4. Run the program in the Flowgorithm tool, and the Tic Tac Toe game will start in the console.
 
